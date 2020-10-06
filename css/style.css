@@ -1,6 +1,9 @@
  #bg-heder{
-     margin: 0 auto;
-     background-color: aqua;
+    background-color: #e2e7ec;
+    width: 1600px;
+    height: 1400px;
+    margin: 0 auto;
+    padding-top: 20px;
  }
 .grid-container {
     display: grid;
