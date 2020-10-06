@@ -1,10 +1,12 @@
+ body{
+     margin: 0;
+ }
  #bg-heder{
     background-color: #e2e7ec;
-    width: 1200px;
-    height: 1400px;
+    width: 1140px;
+    height: 1300px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-r: 20px;
+   padding: 20px;
  }
 .grid-container {
     display: grid;
@@ -18,8 +20,12 @@
       "item-2 item-3 item-4";
   }
   
-  .car { grid-area: car; }
-  
+  .car { grid-area: car;
+     background-image: url(../img/car.png);
+     background-repeat: no-repeat;
+     display: flex;
+     flex-direction: column-reverse;
+    }
   .item-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -31,6 +37,7 @@
     grid-area: item-1;
     background-color: white;
     width: 360px;
+   
   }
   
   .images-1 { grid-area: images-1; }
@@ -81,15 +88,13 @@
       "text-4 text-4 text-4";
     grid-area: item-4;
     background-color: white;
-    width: 359px;
-  }
+    width: 358px;
+ }
   
   .images-4 { grid-area: images-4; }
   
   .text-4 { grid-area: text-4; }
-  #car-img {
-    width: 763px;
-  }
+  
   .box-text{
     padding: 20px;
  }
@@ -106,4 +111,42 @@
    font-size: 22px;
    text-align: left;
    font-family: sans-serif;
+ }
+.ico {
+    padding-top: 40px;
+    width: 45px;
+    height: 45px;
+ } 
+ #icon {
+    margin-top: 45px;
+   
+ }
+ .car-text {
+    color: white;
+    font-size: 22pt;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    opacity: 0.7;
+}
+ .car-data{
+    color: white;
+    font-size: 15pt;
+    margin-left: 30px;
+    margin-bottom: 0;
+    opacity: 0.7;
+ }
+ .footer{
+    margin: 80px auto;
+    text-align: center;
+    font-size: 20px;
+}
+ .gif{
+    width: 20px;
+}
+ .grid-container> div {
+    opacity: 0.5;
+  }
+ .grid-container > div:hover{
+     opacity: 1;
+     transition:all 0.4s ease-in-out 0s
 }
