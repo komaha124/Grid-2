@@ -1,0 +1,78 @@
+ #bg-heder{
+     margin: 0 auto;
+     background-color: aqua;
+ }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "car car item-1"
+      "car car item-1"
+      "item-2 item-3 item-4"
+      "item-2 item-3 item-4";
+  }
+  
+  .car { grid-area: car; }
+  
+  .item-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "images-1 images-1 images-1"
+      "text-1 text-1 text-1";
+    grid-area: item-1;
+  }
+  
+  .images-1 { grid-area: images-1; }
+  
+  .text-1 { grid-area: text-1; }
+  
+  .item-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "images-2 images-2 images-2"
+      "text-2 text-2 text-2";
+    grid-area: item-2;
+  }
+  
+  .images-2 { grid-area: images-2; }
+  
+  .text-2 { grid-area: text-2; }
+  
+  .item-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "images-3 images-3 images-3"
+      "text-3 text-3 text-3";
+    grid-area: item-3;
+  }
+  
+  .images-3 { grid-area: images-3; }
+  
+  .text-3 { grid-area: text-3; }
+  
+  .item-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "images-4 images-4 images-4"
+      "text-4 text-4 text-4";
+    grid-area: item-4;
+  }
+  
+  .images-4 { grid-area: images-4; }
+  
+  .text-4 { grid-area: text-4; }
+  
